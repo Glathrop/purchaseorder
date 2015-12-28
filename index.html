@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body ng-app="purchaseOrder" ng-controller="appCtrl" ng-cloak="">
+  <div layout="column" layout-fill>
+
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button ng-click="openLeftMenu()">Menu</md-button>
+        <!-- fill up the space between left and right area -->
+        <span flex></span>
+        <span>Tejas Finance</span>
+      </div>
+    </md-toolbar>
+
+
+    <md-sidenav md-component-id="left" class="md-sidenav-left">
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <span>Sidebar Menu</span>
+        </div>
+      </md-toolbar>
+      <h2>Credit Dialer</h2>
+      <md-subheader>Use for all references.</md-subheader>
+
+      <md-divider></md-divider>
+    </md-sidenav>
+
+
+    <md-content layout-padding>
+
+    </md-content>
+    <md-button class="md-fab" aria-label="FAB">
+      <md-icon md-svg-src="your/icon.svg"></md-icon>
+    </md-button>
+  </div>
+
+
+  <!-- fill up the space between left and right area -->
+  <!-- <span flex></span></md-toolbar>
+        <div layout="column" layout-fill="" layout-align="top center">
+<h1>Welcome to Purchase Orderer</h1>
+          <p>
+            The right sidenav will focus on a specific child element.
+          </p>
+          <div>
+            <md-button ng-click="toggleLeft()" class="md-primary" hide-gt-md="">
+              Toggle left
+            </md-button>
+          </div>
+          <div>
+            <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+              Toggle right
+            </md-button>
+          </div>
+        </div>
+        <div flex=""></div>
+      </md-content> -->
+
+
+
+
+
+
+
+  <!-- Angular Scripts  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+
+  <!-- Program Scripts -->
+  <script src="app.js"></script>
+  <script src="appCtrl.js"></script>
+</body>
+
+</html>
