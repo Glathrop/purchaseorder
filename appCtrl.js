@@ -6,6 +6,18 @@ $scope.test = "It's working!";
     $mdSidenav('left').toggle();
   };
 
+ $scope.programs = [
+   {
+     name: 'Credit Dialer',
+     description: 'Automate all reference checks'
+
+   },
+   {
+     name: 'Purchase Ordering',
+     description: 'Required for all purchases'
+
+   }
+ ];
 
 
 });

@@ -1,0 +1,19 @@
+md-content h1 {
+  text-align: center;
+  margin: 5px;
+}
+
+.btnGroup{
+  justify-content: center;
+  margin: 5px;
+}
+
+.tableContainer {
+  justify-content: center;
+text-align: center;
+}
+.mainContent {
+  align-items: center;
+justify-content: center;
+border: 1px solid black;
+}
