@@ -1,4 +1,4 @@
-angular.module('purchaseOrder', ['ngMaterial'])
+angular.module('purchaseOrder', ['ngMaterial','md.data.table'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('blue')

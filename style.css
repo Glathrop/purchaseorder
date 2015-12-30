@@ -3,6 +3,13 @@ md-content h1 {
   margin: 5px;
 }
 
+.sideNavLogo {
+  justify-content: center;
+  align-content: center;
+  background-color: primary;
+}
+
+
 .btnGroup{
   justify-content: center;
   margin: 5px;
@@ -10,7 +17,7 @@ md-content h1 {
 
 .tableContainer {
   justify-content: center;
-text-align: center;
+  text-align: center;
 }
 .mainContent {
   align-items: center;

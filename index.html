@@ -4,6 +4,7 @@
 <head>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -24,7 +25,7 @@
     <md-sidenav md-component-id="left" class="md-sidenav-left">
       <md-toolbar>
         <div class="md-toolbar-tools">
-          <span>Sidebar Menu</span>
+          <span>Slant Six Modules</span>
         </div>
       </md-toolbar>
       <div ng-repeat="program in programs">
@@ -49,45 +50,47 @@
       <md-divider></md-divider>
 
   <div flex layout="row" class="tableContainer">
-  <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
+  <table md-table flex>
+    <thead md-head>
+      <tr md-row>
+        <th md-column md-numeric>#</th>
+        <th md-column md-numeric>Name</th>
 
-        <th>Relationship</th>
-        <th>Location</th>
-        <th>Responded</th>
-        <th>Complete</th>
-        <th>Verifies Applicant</th>
-        <th>Permission to Contact</th>
+        <th md-column md-numeric>Relationship</th>
+        <th md-column md-numeric>Location</th>
+        <th md-column md-numeric>Responded</th>
+        <th md-column md-numeric>Complete</th>
+        <th md-column md-numeric>Verifies Applicant</th>
+        <th md-column md-numeric>Permission to Contact</th>
       </tr>
     </thead>
 
-    <tbody>
-      <tr style="cursor:pointer">
-        <th>1</th>
-        <td>Graham Lathrop</td>
-        <td>Friend</td>
-        <td>Dallas, TX</td>
-        <td>Yes</span></td>
-        <td>Yes</span></td>
-        <td>No</span></td>
-        <td>Yes</span></td>
+    <tbody md-body>
+      <tr md-row style="cursor:pointer">
+        <th md-cell>1</th>
+        <td md-cell>Graham Lathrop</td>
+        <td md-cell>Friend</td>
+        <td md-cell>Dallas, TX</td>
+        <td md-cell>Yes</span></td>
+        <td md-cell>Yes</span></td>
+        <td md-cell>No</span></td>
+        <td md-cell>Yes</span></td>
       </tr>
-      <tr style="cursor:pointer">
-        <th>2</th>
-        <td>Willie Nelson</td>
-        <td>Friend</td>
-        <td>Dallas, TX</td>
-        <td>Yes</span></td>
-        <td>Yes</span></td>
-        <td>No</span></td>
-        <td>Yes</span></td>
+      <tr md-row style="cursor:pointer">
+        <th md-cell>2</th>
+        <td md-cell>Willie Nelson</td>
+        <td md-cell>Friend</td>
+        <td md-cell>Dallas, TX</td>
+        <td md-cell>Yes</span></td>
+        <td md-cell>Yes</span></td>
+        <td md-cell>No</span></td>
+        <td md-cell>Yes</span></td>
       </tr>
     </tbody>
   </table>
 </div>
+
+
 
 
       <div flex layout="row" class="mainContent">
@@ -150,6 +153,8 @@
   <script src="bower_components/angular-aria/angular-aria.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-material/angular-material.js"></script>
+  <script type="text/javascript" src="bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
+
 
   <!-- Program Scripts -->
   <script src="app.js"></script>
